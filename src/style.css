@@ -1,0 +1,56 @@
+body {
+    background: url(img/cipher\ 2.jpg);
+    cursor: url(img/cursordefault.png), auto;
+    font-family: chiller;
+    line-height: 42px;
+}
+
+a{
+    cursor : url(img/cursorpointer.png), auto;
+}
+
+.form-inputs-cipher{
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 550px;
+    margin-right: 550px;
+}
+
+.input-label{
+    font-size:19px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.input-mssg{
+    width:300px;
+    height: 100px;
+    border: none;
+    border-radius:6px;
+    padding: 10px;
+}
+
+.input-offset{
+    width:300px;
+    height: 30px;
+    border: none;
+    border-radius:6px;
+    padding: 10px;
+}
+
+.button{
+    width: 18%;
+    display: block;
+    margin: auto;
+    padding: 12px;
+    background-color: #FFD966;
+    border: none;
+    cursor: pointer;
+    border-radius: 17px;
+    font-family: Papyrus;
+}
