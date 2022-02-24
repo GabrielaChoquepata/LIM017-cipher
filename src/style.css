@@ -1,56 +1,266 @@
-body {
-    background: url(img/cipher\ 2.jpg);
-    cursor: url(img/cursordefault.png), auto;
-    font-family: chiller;
-    line-height: 42px;
+@font-face {
+    font-family: Think Big;
+    src: url ("Think Big.ttf") format ("truetype");
 }
 
-a{
-    cursor : url(img/cursorpointer.png), auto;
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* <!-- ENCABEZADO --> */
+
+.header {
+    font-family: Chiller;
+    position: fixed 
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(58, 76, 19,0.6);
+    height: 80px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-family: Think Big;
+}
+
+.logo {
+    font-family: Chiller;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 0 75px;
+    line-height: 80px;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 150px;
+    list-style:none;
+}
+
+.nav-menu-item {
+    font-size: 21px;
+    margin: 0 20px;
+    line-height: 80px;
+    width: max-content;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.nav-menu-link:hover {
+     background-color: #ffc20a;
+     transition: 0.5s;
+}
+
+
+
+
+
+body {
+    background: url(img/cipher\ 2.jpg) no-repeat ;
+    background-size: cover;
+    cursor: url(img/cursordefault.png), auto;
+}
+
+.containerW1{
+    text-align: left;
+    color: #fff;
+    position: absolute;
+    width: 369px;
+    height: 148px;
+    left: 950px;
+    top: 265px;
+
+    font-family: Chiller;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+  
+  /* <!-- es para interlineado de parrafo -->  */
+    line-height: 39px;
+}
+
+#username{
+    width:250px;
+    height: 30px;
+    border: none;
+    border-radius:6px;
+    font-family: Think Big;
+    font-size: 18px;
+}
+
+#btnmostrarW2, #btnmostrarCipher {
+    display: block;
+    padding: 10px 50px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Think Big;
+    overflow: hidden;
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: #ffc20a;
+    border-radius: 20px;
+    border: none;
+}
+
+#btnmostrarW2:hover {
+     background: #f5b800;
+     box-shadow: 0 0 10px #FFD966, 0 0 40px #FFD966, 0 0 80px #FFD966;
+     transition-delay: 0.2s;
+}
+
+
+
+
+.containerW2 {
+     text-align: left;
+     color: #fff;
+     position: absolute;
+     width: 369px;
+     height: 148px;
+     left: 1090px;
+     top: 220px;
+     font-family: Think Big;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 19px;
+    /* <!-- es para interlineado de parrafo -->  */
+     line-height: 22px;
+}
+
+#btnmostrarCipher:hover {
+     background: #f5b800;
+     box-shadow: 0 0 10px #FFD966, 0 0 40px #FFD966, 0 0 80px #FFD966;
+     transition-delay: 0.2s;
+}
+
+.containerW2 #logoB{
+    position: absolute;
+    left:-1100px;
+    top: 170px;
+}
+
+
+ v 
+
+.containerW3 {
+    text-align: left;
+    width: 369px;
+    height: 148px;
+    left: 950px;
+    top: 220px;
+
+    font-family: Chiller;
+    font-size: 19px;
+    line-height: 39px;
 }
 
 .form-inputs-cipher{
-    background-color: yellowgreen;
+    background-color: rgba(154,205,50,0.6);
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
-    margin-top: 10px;
-    margin-left: 550px;
-    margin-right: 550px;
+    margin-top: 90px;
+    margin-left: 320px;
+    margin-right: 850px;
+    border-radius: 20px
 }
 
-.input-label{
+.form-text{
+    font-family: Think Big;
+    color: #fff;
     font-size:19px;
     font-weight: 400;
     margin-bottom: 10px;
     margin-top: 20px;
 }
 
-.input-mssg{
+.input-mesg{
+    font-family: Think Big;
+    font-size: 20px;
+    color: #0d0d0d;
     width:300px;
-    height: 100px;
+    height: 150px;
     border: none;
-    border-radius:6px;
+    border-radius:20px;
     padding: 10px;
 }
 
-.input-offset{
+.position {
+    font-family: Candara;
+    font-size: 15px;
+    color: #0d0d0d;
     width:300px;
     height: 30px;
     border: none;
-    border-radius:6px;
+    border-radius:20px;
     padding: 10px;
 }
 
-.button{
-    width: 18%;
+.btn {
     display: block;
-    margin: auto;
-    padding: 12px;
-    background-color: #FFD966;
-    border: none;
+    padding: 3px 80px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Think Big;
+    overflow: hidden;
+    transition: 0.2s;
     cursor: pointer;
-    border-radius: 17px;
-    font-family: Papyrus;
+    background-color: #ffc20a;
+    border-radius: 20px;
+    border: none;
+    margin-left: 375px;
+    margin-right: 830px;
+}
+
+.btn:hover {
+     background: #f5b800;
+     box-shadow: 0 0 10px #FFD966, 0 0 40px #FFD966, 
+     0 0 80px #FFD966;
+     transition-delay: 0.2s;
+}
+
+.result-cipher{
+    background-color: rgba(154,205,50,0.6);
+    padding: 20px 0;
+    position: absolute;
+    width: 350px;
+    height: 295px;
+    left: 825px;
+    top: 170px;
+    border-radius: 20px
+}
+
+.result-text {
+    font-family: Think Big;
+    color: #fff;
+    font-size:19px;
+    font-weight: 400;
+    margin-bottom: 6px;
+    margin-top: 8px;
+    margin-left: 125px;
+}
+
+#result {
+    background-color: #fffd;
+    font-family: Think Big;
+    font-size: 20px;
+    color:  #0d0d0d;
+    padding: 10px;
+    width:300px;
+    height: 180px;
+    border: none;
+    border-radius:20px;
+    margin-left: 25px;
 }

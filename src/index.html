@@ -1,37 +1,92 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    
-    <header>
-      <section>
-        <h1 class="title-cipher">Cifrado Secreto en Gravity Falls</h1>
-      </section>
-    </header>
-    
-    <form class="form-cipher"></form>
-        <div class="form-inputs-cipher">
-           <label class="input-label" for="string">INGRESA TU MENSAJE</label>
-           <textarea class="input-mssg" id="text-mssg" name= "string" type="text" cols="30" rows="10"></textarea>
-           <label class="input-label" for="offset" id="offset">CLAVE </label>
-           <input class="input-offset" id="offset" type="number"> <br>
-        </div>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Caesar Cipher</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
-        <div class="buttons-inputs-cipher">
-          <button class="button" id="encode-button">CIFRAR</button><br>
-          <button class="button" id="decode-button">DECIFRAR</button>
-        </div>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="" class="logo nav-link">GRAVITY FALLS
+      <img class= "logo-header" src="img/icono.png" widht="700" height="150" align="right" position="absolute" /></a>
+      <ul class="nav-menu">
+      <li class="nav-menu-item">
+        <a href="" class="nav-menu-link nav-link">INICIO</a></li>
+      <li class="nav-menu-item">
+        <a href="#" class="nav-menu-link nav-link">CREA TU PERSONAJE</a></li>
+      <li class="nav-menu-item">
+        <a href="#" class="nav-menu-link nav-link">MISIONES</a></li>
+      <li class="nav-menu-item">
+        <a href="#" class="nav-menu-link nav-link">REGLAS</a></li>
+      <li class="nav-menu-item">
+        <a href="#" class="nav-menu-link nav-link">NUESTRA COMUNIDAD</a></li>
+      <li class="nav-menu-item">
+        <a href="#" class="nav-menu-link nav-link">NOVEDADES</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+<div class= "containerW1" >
+	<div id="W1" style="display:block">
+    <h1>BIENVENID@ A  LA COMUNIDAD GRAVITY FALLS</h1>
+    <h2>Escribe tu nombre :</h2>
+    <input type="text" id="username" name="username"> 
+    </input><br><br>
+    <button type="button" id="btnmostrarW2">JUGAR</button>
+    <br>
+  </div>
+</div>
 
-        <div class="result-cipher">
-          <h4 class="result-title">MENSAJE LISTO:</h4>
+ <div class= "containerW2" > 
+  <div id="W2" style="display:none">
+    <p id='personalised message'></p><br>
+    <button type="button" id="btnmostrarCipher">MENSAJES SECRETOS</button>
+    <img id="logoB" src="img/logo-2.png" widht="900" height="330" />
+  </div>
+ </div>
+
+ <div class="containerW3" 
+   <div id= "W3" style="display:none">
+    <form action="" class="form-cipher">
+      <div class="form-inputs-cipher">
+          <label class="form-text" for="text-meng">Ingresa tu mensaje :</label>
+          <textarea class="input-mesg" id="text-meng" name="text-meng" cols="30" rows="10"></textarea>
+          <label class="form-text" for="offset">Clave de desplazamiento :</label>
+          <input class="position" id="offset" type="number" name="offset" min="1" required>
+          <br>
+
+      </div>
+      <div class="buttons-inputs-cipher">
+          <button class="btn" id="encode-button">Cifrar</button> <br>
+          <button class="btn" id="decode-button">Descifrar</button> <br>
+          <button class="btn" id="clear-button">Limpiar</button>
+      </div>
+
+      <div class="result-cipher">
+          <h4 class="result-text">El resultado es :</h4>
           <p id="result"></p>
-        </div>
+      </div>
+  </form>
+        
+      <br>
+      <br>
+      <footer>
+       <li><img id="rrss" src="img/facebook.png" href="https://es-la.facebook.com/" widht="45" height="45" align="right" position="absolute" title="Facebook"/>
+         <img id="rrss" src="img/instagram.png" href="https://www.instagram.com/" widht="45" height="45" align="right" position="absolute" title="Instagram"/>
+         <img id="rrss" src="img/twitter.png" href="https://twitter.com/" widht="45" height="45" align="right" position="absolute" title="Twitter"/>
+         <img id="rrss" src="img/youtube.png" href="https://www.youtube.com/" widht="45" height="45" align="right" position="absolute" title="Youtube"/></li>
+       </footer>
 
-    <script src="index.js" type="module"></script>
-  </body>
+    </form>   
+   </div>
+</div>
+
+
+  <script src="index.js"  type="module"></script>
+</body>
+
 </html>
