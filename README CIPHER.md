@@ -4,7 +4,7 @@
 
 * [1. Funcionalidad del proyecto](#1-funcionalidad-del-proyecto)
 * [2. Proceso de diseño](#2-proceso-de-diseño)
-* [3. Instrucciones de uso](#4-instrucciones-de-uso)
+* [3. Instrucciones de uso](#3-instrucciones-de-uso)
 
 ***
 ## 1. Funcionalidad del proyecto
@@ -19,7 +19,7 @@ Por ejemplo, si usamos un desplazamiento de 2 posiciones:
 
 ## 2. Proceso de diseño
 
-![] (https://github.com/GabrielaChoquepata/LIM017-cipher/blob/main/src/img/procesoDeDise%C3%B1oReadme.png)
+<img src="https://github.com/GabrielaChoquepata/LIM017-cipher/blob/main/src/img/procesoDeDise%C3%B1oReadme.png" width="100%"></img>
 
 > Infografia proceso de diseño.
 
