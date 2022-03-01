@@ -1,45 +1,44 @@
-// function trace (str) {
-//   console.log(Date(Date.now()),str);
-// }
-// export default trace;
 const cipher = {
-  encode: (offset = undefined, string = "") => {
-      if (typeof offset !== "number") throw new TypeError("El valor ingresado no es un numero");
+  encode: (offset , string) => {
       if (!string) throw new TypeError('No ingresaste ningun mensaje');
-      if (typeof string !== "string") throw new TypeError("El valor ingresado no es texto");
+      if (typeof string !== "string") throw new TypeError("El mensaje ingresado no es texto");
+      if (typeof offset !== "number") throw new TypeError("No ingresaste un numero");
 
-      let messgCode = ""
+      let messageEncode = ""
       for (let i = 0; i < string.length; i++) {
           if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
-              let posAssci = string.charCodeAt(i);
-              let posOffset = (posAssci - 65 + offset) % 26 + 65;
-              let letterResult = String.fromCharCode(posOffset);
-              messgCode = messgCode + letterResult;
-          } else {
-            messgCode += string[i];
+              let posInAssci = string.charCodeAt(i);
+              let posInOffset = (posInAssci - 65 + offset) % 26 + 65;
+              let Result = String.fromCharCode(posInOffset);
+              messageEncode = messageEncode + Result;
+          }
+          else {
+            messageEncode += string[i];
           }
 
       }
-      return messgCode
+      return messageEncode
   },
-  decode: (offset = undefined, string = "") => {
-      if (!string) throw new TypeError('No ingresaste ningun mensaje');
-      if (typeof string !== "string") throw new TypeError("El valor ingresado no es texto");
-      if (typeof offset !== "number") throw new TypeError("El valor ingresado no es un numero");
 
-      let messgDecode = ""
+  decode: (offset , string) => {
+      if (!string) throw new TypeError('No ingresaste ningun mensaje');
+      if (typeof string !== "string") throw new TypeError("El mensaje ingresado no es texto");
+      if (typeof offset !== "number") throw new TypeError("No ingresaste un numero");
+
+      let messageDecode = ""
       for (let i = 0; i < string.length; i++) {
           if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
-              let posAssci = string.charCodeAt(i);
-              let posOffset = (posAssci + 65 - offset) % 26 + 65;
-              let letterResult = String.fromCharCode(posOffset);
-              messgDecode = messgDecode + letterResult;
-          } else {
-            messgDecode += string[i];
+              let posInAssci = string.charCodeAt(i);
+              let posInOffset = (posInAssci + 65 - offset) % 26 + 65;
+              let Result = String.fromCharCode(posInOffset);
+              messageDecode = messageDecode + Result;
+          }
+          else {
+            messageDecode += string[i];
           }
 
       }
-      return messgDecode
+      return messageDecode
   }
 };
 

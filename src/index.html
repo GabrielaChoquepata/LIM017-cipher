@@ -13,7 +13,8 @@
     <nav class="nav">
       <a href="" class="logo nav-link">GRAVITY FALLS
       <img class= "logo-header" src="img/icono.png" widht="700" height="150" align="right" position="absolute" /></a>
-      <ul class="nav-menu">
+
+      <ol class="nav-menu">
       <li class="nav-menu-item">
         <a href="" class="nav-menu-link nav-link">INICIO</a></li>
       <li class="nav-menu-item">
@@ -26,67 +27,64 @@
         <a href="#" class="nav-menu-link nav-link">NUESTRA COMUNIDAD</a></li>
       <li class="nav-menu-item">
         <a href="#" class="nav-menu-link nav-link">NOVEDADES</a></li>
-      </ul>
+      </ol>
     </nav>
   </header>
-  
-<div class= "containerW1" >
-	<div id="W1" style="display:block">
+
+<section class= "containerW1" >
+	<main id="W1" style="display:block">
     <h1>BIENVENID@ A  LA COMUNIDAD GRAVITY FALLS</h1>
     <h2>Escribe tu nombre :</h2>
-    <input type="text" id="username" name="username"> 
-    </input><br><br>
+    <input type="text" id="username" name="username"/>
+    <br><br>
     <button type="button" id="btnmostrarW2">JUGAR</button>
     <br>
-  </div>
-</div>
+  </main>
+</section>
 
- <div class= "containerW2" > 
-  <div id="W2" style="display:none">
-    <p id='personalised message'></p><br>
+<section class= "containerW2">
+  <main id="W2" style="display:none">
+    <p id="personalised message"></p><br>
     <button type="button" id="btnmostrarCipher">MENSAJES SECRETOS</button>
     <img id="logoB" src="img/logo-2.png" widht="900" height="330" />
-  </div>
- </div>
+  </main>
+</section>
 
- <div class="containerW3" 
-   <div id= "W3" style="display:none">
+<section class="containerW3">
+  <main id= "W3" style="display:none">
     <form action="" class="form-cipher">
-      <div class="form-inputs-cipher">
+      <main class="form-inputs-cipher">
           <label class="form-text" for="text-meng">Ingresa tu mensaje :</label>
-          <textarea class="input-mesg" id="text-meng" name="text-meng" cols="30" rows="10"></textarea>
+          <textarea class="input-mesg" id="text-meng" name="text-meng"></textarea>
           <label class="form-text" for="offset">Clave de desplazamiento :</label>
           <input class="position" id="offset" type="number" name="offset" min="1" required>
           <br>
+      </main>
 
-      </div>
-      <div class="buttons-inputs-cipher">
-          <button class="btn" id="encode-button">Cifrar</button> <br>
-          <button class="btn" id="decode-button">Descifrar</button> <br>
-          <button class="btn" id="clear-button">Limpiar</button>
-      </div>
+      <main class="buttons-cipher">
+          <button class="btn" id="btnEncode">Cifrar</button> <br>
+          <button class="btn" id="btnDecode">Descifrar</button> <br>
+          <button class="btn" id="btnClear">Limpiar</button>
+      </main>
 
-      <div class="result-cipher">
+      <main class="result-cipher">
           <h4 class="result-text">El resultado es :</h4>
           <p id="result"></p>
-      </div>
-  </form>
-        
-      <br>
-      <br>
-      <footer>
-       <li><img id="rrss" src="img/facebook.png" href="https://es-la.facebook.com/" widht="45" height="45" align="right" position="absolute" title="Facebook"/>
-         <img id="rrss" src="img/instagram.png" href="https://www.instagram.com/" widht="45" height="45" align="right" position="absolute" title="Instagram"/>
-         <img id="rrss" src="img/twitter.png" href="https://twitter.com/" widht="45" height="45" align="right" position="absolute" title="Twitter"/>
-         <img id="rrss" src="img/youtube.png" href="https://www.youtube.com/" widht="45" height="45" align="right" position="absolute" title="Youtube"/></li>
-       </footer>
+      </main>
+    </form>
 
-    </form>   
-   </div>
-</div>
+  <br>
+  <br>
+  <footer>
+  <li><img class="rrss" src="img/facebook.png" href="https://es-la.facebook.com/" widht="45" height="45" align="right" position="absolute" title="Facebook"/>
+      <img class="rrss" src="img/instagram.png" href="https://www.instagram.com/" widht="45" height="45" align="right" position="absolute" title="Instagram"/>
+      <img class="rrss" src="img/twitter.png" href="https://twitter.com/" widht="45" height="45" align="right" position="absolute" title="Twitter"/>
+      <img class="rrss" src="img/youtube.png" href="https://www.youtube.com/" widht="45" height="45" align="right" position="absolute" title="Youtube"/></li>
+  </footer>
+</main>
+</section>
 
+<script src="index.js"  type="module"></script>
 
-  <script src="index.js"  type="module"></script>
 </body>
-
 </html>
